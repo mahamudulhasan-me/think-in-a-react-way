@@ -1,3 +1,5 @@
+import Button from "./components/Button";
+import Counter from "./components/Counter";
 import FetchData from "./components/FetchData";
 
 const App = () => {
@@ -26,6 +28,15 @@ const App = () => {
       ))} */}
       {/* <User users={users} /> */}
       <FetchData status="loading" />
+      <Button>Learn More</Button>
+
+      <Counter
+        counterStyle={{
+          color: "red",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      />
     </div>
   );
 };
