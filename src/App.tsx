@@ -1,5 +1,6 @@
 import Button from "./components/Button";
-import Counter from "./components/Counter";
+import CounterByContext from "./components/CounterByContext";
+import CounterReducer from "./components/CounterReducer";
 import FetchData from "./components/FetchData";
 
 const App = () => {
@@ -29,14 +30,15 @@ const App = () => {
       {/* <User users={users} /> */}
       <FetchData status="loading" />
       <Button>Learn More</Button>
-
-      <Counter
+      {/* <Counter
         counterStyle={{
           color: "red",
           display: "flex",
           justifyContent: "center",
         }}
-      />
+      /> */}
+      {/* <CounterReducer /> */}
+      <CounterByContext />
     </div>
   );
 };
